@@ -60,6 +60,7 @@ public class CubeGame {
         powerCube = maxRed * maxGreen * maxBlue;
     }
 
+
     public int maxValue(List<Integer> colourList){
         int max = colourList.stream().mapToInt(v -> v).max().orElseThrow(NoSuchElementException::new);
         return max;
